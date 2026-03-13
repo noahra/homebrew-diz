@@ -1,19 +1,19 @@
 class Diz < Formula
   desc "Share SSH public keys between machines via a compact passphrase"
   homepage "https://github.com/noahra/diz"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/noahra/diz/releases/download/v0.2.3/diz-darwin-arm64"
-      sha256 "a40aa9457cda53fb2ef6d4b5b916b12b31125cb3f1377b29f4c5db3f6ad20c16"
+      url "https://github.com/noahra/diz/releases/download/v0.2.4/diz-darwin-arm64"
+      sha256 "cdb0e936229be0eae03306b06d299319dc417b470706542338cb6f95b107c707"
 
       def install
         bin.install "diz-darwin-arm64" => "diz"
       end
     else
-      url "https://github.com/noahra/diz/releases/download/v0.2.3/diz-darwin-x64"
-      sha256 "60d1134d462f1d44ee50184d71854c5537bd28968b15f47e97c1d7db57931270"
+      url "https://github.com/noahra/diz/releases/download/v0.2.4/diz-darwin-x64"
+      sha256 "da60f3a6872ac505ef00a9db71df979e5f9913070696416156d2d518c967aa88"
 
       def install
         bin.install "diz-darwin-x64" => "diz"
